@@ -5,6 +5,7 @@
 Polymorphic Models for Django
 =============================
 
+
 Django-polymorphic simplifies using inherited models in Django projects.
 When a query is made at the base model, the inherited model classes are returned.
 
