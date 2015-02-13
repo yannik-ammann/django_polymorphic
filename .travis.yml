@@ -21,7 +21,7 @@ matrix:
   - python: "2.6"
     env: DJANGO=django==1.7
   - python: "2.6"
-    env: - DJANGO='django>=1.8.a,<1.9'
+    env: DJANGO='django>=1.8.a,<1.9'
 
 install:
   - pip install $DJANGO coverage==3.6
