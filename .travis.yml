@@ -9,7 +9,7 @@ env:
   - DJANGO=django==1.5
   - DJANGO=django==1.6
   - DJANGO=django==1.7
-  - DJANGO=https://www.djangoproject.com/download/1.8a1/tarball/
+  - DJANGO='django>=1.8.a,<1.9'
   #- DJANGO=https://github.com/django/django/archive/stable/1.6.x.zip
 
 matrix:
@@ -21,7 +21,7 @@ matrix:
   - python: "2.6"
     env: DJANGO=django==1.7
   - python: "2.6"
-    env: DJANGO=https://www.djangoproject.com/download/1.8a1/tarball/
+    env: - DJANGO='django>=1.8.a,<1.9'
 
 install:
   - pip install $DJANGO coverage==3.6
